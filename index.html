@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@400;700&family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="mx-auto max-w-7xl px-2">
+        <div class="flex justify-between items-center px-2 pt-7 pb-5">
+          <div class="logo">
+            <a href=""><img src="img/logo.png" alt="" /></a>
+          </div>
+
+          <div class="menu-top">
+            <ul class="menu-res sm:flex sm:space-x-8 hidden">
+              <li>
+                <a href="" class="hover:text-[#FD4756]">THÔNG TIN TRÒ CHƠI</a>
+              </li>
+              <li><a href="" class="hover:text-[#FD4756]">TRUYỀN THÔNG</a></li>
+              <li><a href="" class="hover:text-[#FD4756]">TIN TỨC</a></li>
+              <li><a href="" class="hover:text-[#FD4756]">BẢNG XẾP HẠNG</a></li>
+              <li><a href="" class="hover:text-[#FD4756]">HỖ TRỢ</a></li>
+              <li>
+                <a href="" class="hover:text-[#FD4756]">THỂ THAO ĐIỆN TỬ</a>
+              </li>
+            </ul>
+            <div id="menu" class="sm:hidden">
+              <img src="img/menu.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="mx-auto max-w-7xl px-2">
+        <img src="img/banner1.png" alt="" class="" />
+      </div>
+    </section>
+    <section>
+      <div class="mx-auto max-w-7xl px-2 pb-8">
+        <h2 class="text-3xl pt-[64px] pb-8 text-center sm:text-left">
+          TIN TỨC MỚI NHẤT
+        </h2>
+        <div class="grid sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-8">
+          <div>
+            <img src="img/content1.png" alt="" class="w-full" />
+            <span class="text-[#FD4756] py-4 block">Cập nhật trò chơi</span>
+            <h3 class="text-xl">
+              <a href="">VALORANT - Thông Tin Bản Cập Nhật 4.03</a>
+            </h3>
+          </div>
+          <div>
+            <img src="img/content2.png" alt="" class="w-full" />
+            <span class="text-[#FD4756] py-4 block">Cập nhật trò chơi</span>
+            <h3 class="text-xl">
+              <a href="">VALORANT - Thông Tin Bản Cập Nhật 4.03</a>
+            </h3>
+          </div>
+          <div>
+            <img src="img/content3.png" alt="" class="w-full" />
+            <span class="text-[#FD4756] py-4 block">Cập nhật trò chơi</span>
+            <h3 class="text-xl">
+              <a href="">VALORANT - Thông Tin Bản Cập Nhật 4.03</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mx-auto max-w-7xl px-2">
+        <img src="img/banner2.png" alt="" />
+      </div>
+    </section>
+    <footer>
+      <div class="mx-auto max-w-7xl px-2">
+        <div
+          class="flex justify-between items-center bg-[#000000] h-24 mt-2 px-5"
+        >
+          <span class="text-white">© 2021 All Rights Reserved</span>
+          <button class="bg-[#FD4756] text-white rounded-md p-2">
+            Đăng ký ngay
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menu = document.querySelector("#menu");
+      const menuRes = document.querySelector(".menu-res");
+      const menuTop = document.querySelector(".menu-top");
+      menu.addEventListener("click", () => {
+        menuRes.classList.toggle("hidden");
+        menuTop.classList.toggle("justify-end");
+      });
+    </script>
+  </body>
+</html>
